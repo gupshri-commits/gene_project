@@ -6,3 +6,5 @@ class Gene:
     def gc_content(self):
         gc = self.sequence.count("G") + self.sequence.count("C")
         return gc / len(self.sequence) * 100
+    def reverse(self):
+        return self.sequence[::-1]
